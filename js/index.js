@@ -63,6 +63,24 @@ anchor[3].innerText = siteContent.nav["nav-item-4"];
 anchor[4].innerText = siteContent.nav["nav-item-5"];
 anchor[5].innerText = siteContent.nav["nav-item-6"];
 
+//task3 changing nav
+for (let i = 0; i < anchor.length; i++) {
+  anchor[i].style.color = "green";
+}
+
+//task 3 adding two new things
+document
+  .querySelector("nav")
+  .prepend((document.createElement("a").innerText = "Bebop"));
+
+let newA2 = document.createElement("a");
+newA2.textContent = "Bobeep";
+let navParent = document.querySelector("nav");
+navParent.appendChild(newA2);
+
+// let p = document.createElement("p");
+// document.body.appendChild(p);
+
 //adding h1
 const newH1 = document.querySelector("h1");
 newH1.textContent = siteContent["cta"]["h1"];
